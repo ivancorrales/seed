@@ -1,6 +1,6 @@
-module github.com/golang-templates/seed/build
+module github.com/{{.repository.organization}}/{{.repository.name}}/build
 
-go 1.16
+go {{.goVersion}}
 
 require (
 	github.com/golangci/golangci-lint v1.44.2

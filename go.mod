@@ -1,5 +1,5 @@
-module github.com/golang-templates/seed
+module github.com/{{.repository.organization}}/{{.repository.name}}
 
-go 1.16
+go {{.goVersion}}
 
 require github.com/stretchr/testify v1.7.0
