@@ -1,0 +1,15 @@
+version: v1
+mode: goTemplate
+
+variables:
+  - name: ProjectName
+  - name: application
+    _:
+      - name: version
+        default: 1.17
+  - name: applicationName
+  - name: goVersion
+  - name: repository
+    _:
+      - name: organizerion
+      - name: name
