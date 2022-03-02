@@ -2,18 +2,14 @@ version: v1
 mode: goTemplate
 
 variables:
-  - name: ProjectName
-  - name: application
-    props:
-      - name: version
-        default: 0.0.1
+  - name: projectName
+    description: Name of your repository
+  - name: applicationVersion
+    default: 0.0.1
   - name: applicationName
   - name: goVersion
     default: 1.17
     description: Version of Go
-  - name: repository
-    props:
-      - name: organizerion
-        description: Name of your Github organization
-      - name: name
-        description: Name of your repository
+  - name: organizerion
+    description: Name of your Github organization
+    
