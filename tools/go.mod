@@ -1,4 +1,4 @@
-module github.com/{{.repository.organization}}/{{.repository.name}}/build
+module github.com/{{.organization}}/{{.projectNmae}}/build
 
 go {{.goVersion}}
 

@@ -20,14 +20,14 @@ release:
 dockers:
   -
     image_templates:
-    - "docker.pkg.github.com/golang-templates/seed/{{.ProjectName}}:latest"
-    - "docker.pkg.github.com/golang-templates/seed/{{.ProjectName}}:{{`{{.Major}}`}}"
-    - "docker.pkg.github.com/golang-templates/seed/{{.ProjectName}}:{{`{{.Major}}`}}.{{`{{.Minor}}`}}"
-    - "docker.pkg.github.com/golang-templates/seed/{{.ProjectName}}:{{`{{.Major}}`}}.{{`{{.Minor}}`}}.{{`{{.Patch}}`}}"
+    - "docker.pkg.github.com/golang-templates/seed/{{.projectName}}:latest"
+    - "docker.pkg.github.com/golang-templates/seed/{{.projectName}}:{{`{{.Major}}`}}"
+    - "docker.pkg.github.com/golang-templates/seed/{{.projectName}}:{{`{{.Major}}`}}.{{`{{.Minor}}`}}"
+    - "docker.pkg.github.com/golang-templates/seed/{{.projectName}}:{{`{{.Major}}`}}.{{`{{.Minor}}`}}.{{`{{.Patch}}`}}"
     build_flag_templates:
     - "--pull"
     - "--label=org.opencontainers.image.created={{`{{.Date}}`}}"
-    - "--label=org.opencontainers.image.name={{`{{.ProjectName}}`}}"
+    - "--label=org.opencontainers.image.name={{.projectName}}"
     - "--label=org.opencontainers.image.revision={{`{{.FullCommit}}`}}"
     - "--label=org.opencontainers.image.version={{`{{.Version}}`}}"
     - "--label=org.opencontainers.image.source={{`{{.GitURL}}`}}"
