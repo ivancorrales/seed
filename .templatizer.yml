@@ -7,6 +7,7 @@ variables:
   - name: applicationVersion
     default: 0.0.1
   - name: applicationName
+    secret: true
   - name: goVersion
     default: 1.17
     description: Version of Go
