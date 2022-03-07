@@ -9,7 +9,7 @@ variables:
   - name: applicationName
     secret: true
   - name: goVersion
-    default: 1.17
+    default: 1.18
     description: Version of Go
   - name: organizerion
     description: Name of your Github organization
